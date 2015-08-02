@@ -4,22 +4,22 @@ import dockercontroller.daedalus.util.CommandResult;
 
 public interface ContainerService {
 	
-	CommandResult create();
+	CommandResult create(String appID,String location);
 
 	
-	CommandResult stop();
+	CommandResult stop(String containerID, Integer time);
 
-	CommandResult start();
-
-	
-	CommandResult restart();
+	CommandResult start(String containerID);
 
 	
-	CommandResult remove();
+	CommandResult restart(String containerID,  Integer time);
 
 	
-	CommandResult forceRemove ();
+	CommandResult remove(String containerID);
 
 	
-	CommandResult inspect ();
+	CommandResult forceRemove (String containerID);
+
+	
+	CommandResult inspect (String containerID);
 }
