@@ -14,6 +14,13 @@ The main features of Daedalus are as follows:
 ##Usage
 ###Install Docker 
 Well,first of all,you need make sure your Docker  was Installed.[get started with Docker.](https://www.docker.com/)
+###Get the Docker image
+You can pull image from DockerHub
+> `docker pull freezerglp/centos-apache-php:v1`
+
+or you can build the image yourself using the given Dockerfile.
+
+
 ###Run Daedalus
 You can package the Daedals as a jar package.This project was organized by maven.You just need:
 	
@@ -39,3 +46,16 @@ Just input the containerID and the time given to the container to prepare to be 
 Just input the containrID of  the container you want to remove.But you can not remove a running container using this method.
 ###Forceremove
 Just input the containrID of  the container you want to forceremove.No matter running or stopped container can be removed.But it can cause unpredictable problem，which is not  recommended.
+
+##TODO
+Future work are as follows:
+
+* Container search:get containerID trough appID.
+* Container inspect:get more detailed info about a specific container
+* Image management:manage your images.
+* etc
+
+##Feedback
+Any feedback and suggestion are highly appreciated.
+
+E-mail:gonglingpu@foxmail.com
