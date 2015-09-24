@@ -4,6 +4,8 @@
 FROM centos
 MAINTAINER GongLingpu gonglingpu@foxmail.com
 WORKDIR /root/
+RUN yum -y install unzip
+RUN yum -y install vim
 RUN yum -y install httpd php || true
 RUN yum -y install mysql php-mysqlnd
 RUN mkdir /var/log/httpd 
