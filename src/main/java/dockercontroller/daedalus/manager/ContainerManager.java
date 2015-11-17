@@ -32,7 +32,6 @@ public class ContainerManager implements ContainerService{
         try {
             result =  new CommandHelper().exec(runCmd);
         } catch (IOException e) {
-            // TODO Auto-generated catch block
             logger.error("execute run command failed, caused by "+ e.getMessage());
         }
         logger.info("create container done");
